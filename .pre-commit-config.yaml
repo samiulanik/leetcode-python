@@ -8,6 +8,7 @@ repos:
     -   id: check-json
     -   id: name-tests-test
     -   id: pretty-format-json
+    -   id: end-of-file-fixer
 -   repo: https://github.com/psf/black
     rev: stable
     hooks:
@@ -43,4 +44,3 @@ repos:
           # check out their meaning here
           # https://flake8.pycqa.org/en/latest/user/error-codes.html
           - "--ignore=E203,E266,E501,W503,F403,F401,E402"
-
