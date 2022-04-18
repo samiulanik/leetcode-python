@@ -1,4 +1,4 @@
-from solutions.two_pointer import three_sum
+from solutions.two_pointers import three_sum
 
 
 def test_happy_path():

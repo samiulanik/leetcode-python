@@ -4,6 +4,7 @@ from typing import List
 
 def threeSum(nums: List[int]) -> List[List[int]]:
     result, size = [], len(nums)
+
     if size < 3:
         return result
 
@@ -17,12 +18,12 @@ def threeSum(nums: List[int]) -> List[List[int]]:
             if target == 0:
                 result.append([nums[i], nums[left], nums[right]])
                 while left + 1 < right and nums[left] == nums[left + 1]:
-                    left = left + 1
+                    left += 1
                 while left < right - 1 and nums[right] == nums[right - 1]:
-                    right = right - 1
+                    right -= 1
                 left, right = left + 1, right - 1
             elif target < 0:
-                left = left + 1
+                left += 1
             else:
-                right = right - 1
+                right -= 1
     return result
