@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/number-of-islands/
+# might not work in leetcode after copy and pasting.
 
 def numIslands(grid: list[list[str]]) -> int:
     island_count = 0
