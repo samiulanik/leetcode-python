@@ -8,4 +8,3 @@ def kthFactor(n: int, k: int) -> int:
         if count == k:
             return i
     return -1
-
